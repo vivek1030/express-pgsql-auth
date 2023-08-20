@@ -13,16 +13,16 @@ const app = express();
 app.use(bodyParser.json());
 
 // Configure CORS with allowed origins
-const allowedOrigins = ['https://yourdomain.com', 'http://localhost:3000']; // Add your allowed origins here
-app.use(cors({
-    origin: function (origin, callback) {
-        if (allowedOrigins.includes(origin)) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    }
-}));
+// const allowedOrigins = ['https://yourdomain.com', 'http://localhost:3000']; // Add your allowed origins here
+// app.use(cors({
+//     origin: function (origin, callback) {
+//         if (allowedOrigins.includes(origin)) {
+//             callback(null, true);
+//         } else {
+//             callback(new Error('Not allowed by CORS'));
+//         }
+//     }
+// }));
 
 // CREATE TABLE users (
 //     id SERIAL PRIMARY KEY,
